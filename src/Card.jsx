@@ -1,9 +1,14 @@
-const Card = () => {
+
+
+const Card = ({userName, address, mobile,}) => {
   return (
-    <div>
-        <h1>Heading</h1>
-        <p>Paragraph</p>
-        <p>I am the new paragraph</p>
+    // let style=(
+    //   color :color;
+    // )
+    <div className="bg-green-300 h-48 w-48 border-2 border-gray-950 rounded-xl shadow-xl shadow-black m-8 items-center">
+        <h1>Name : {userName}</h1>
+        <p>address : {address}</p>
+        <p>mobileNo : {mobile}</p>
     </div>
   )
 }
